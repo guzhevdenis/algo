@@ -26,5 +26,10 @@ def twoSum(numbers, target):
                 return [i+1,j+1]
         return []
 
+numbers = [1,2,3,5]
+target = 4
+
+print(twoSum(numbers, target))
+
 #We just use the idea of two pointers
 #check git
