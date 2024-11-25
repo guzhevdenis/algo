@@ -5,11 +5,8 @@
 # Note that you must do this in-place without making a copy of the array.
 
  
-def moveZeroes(self, nums: List[int]) -> None:
-        """
-        Do not return anything, modify nums in-place instead.
-        """
-    nuls = 0
+def moveZeroes(nums):
+
     non_zero = 0 
     for i in range(len(nums)):
         if (nums[i] == 0):
