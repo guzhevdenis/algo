@@ -1,4 +1,4 @@
-def intersect(self, nums1: List[int], nums2: List[int]) -> List[int]:
+def intersect(nums1, nums2):
     nums1_d = {}
     for element in nums1:
         if element in nums1_d:
