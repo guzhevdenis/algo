@@ -21,5 +21,5 @@ def peakIndexInMountainArray(arr):
 
 
 
-nums = [0,1,5,3,6,1,2,7]
+nums = [0,1,5,3,6,1,2,3]
 print(peakIndexInMountainArray(nums))
