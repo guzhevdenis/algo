@@ -25,10 +25,9 @@ def middleNode(head):
         n += 1
     return cur
 
-last = ListNode(5)
-four = ListNode(4,last)
-three = ListNode(3,four)
-two = ListNode(2,three)
+
+three = ListNode(1)
+two = ListNode(1,three)
 head = ListNode(1,two)
 
 middle_node = middleNode(head)

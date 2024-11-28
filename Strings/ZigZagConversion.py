@@ -16,7 +16,7 @@ def convert(s, numRows):
 
     idx, d = 0, 1
     rows = [[] for _ in range(numRows)]
-
+    #idx - индекс ряда 
     for char in s:
         rows[idx].append(char)
         if idx == 0:
