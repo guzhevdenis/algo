@@ -8,3 +8,6 @@ def reverseString(s):
     for i in range (len(s) //2):
         swapping_value = s[i]
         s[i] = s[len(s)-1-i] 
+        s[len(s)-1-i] = swapping_value
+    
+    
