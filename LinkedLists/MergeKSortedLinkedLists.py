@@ -10,26 +10,38 @@ class ListNode:
          self.next = next
 
 def find_min(lists):
+    if  not lists[0]:
+        return None
     min = lists[0].val
     min_number = 0
     for i, node in enumerate(lists):
         if node.val <= min:
             min_number = i
+            min = node.val
     return min_number
 
 def mergeKLists(lists):
+
+
+    filtered_list = [list for list in lists if list]
+
+    if not filtered_list:
+        return None
+    
     dummy = ListNode()
     cur = dummy
     min_number = 0
-    if lists == None:
+    
+    if filtered_list == None:
         return None
-    while (lists):
-        min_number = find_min(lists)
-        cur.next = lists[min_number]
-        lists[min_number] = lists[min_number].next
+    
+    while (filtered_list):
+        min_number = find_min(filtered_list)
+        cur.next = filtered_list[min_number]
+        filtered_list[min_number] = filtered_list[min_number].next
 
-        if(lists[min_number] == None):
-            lists.pop(min_number)
+        if(filtered_list[min_number] == None):
+            filtered_list.pop(min_number)
         cur = cur.next
         
         
@@ -50,6 +62,6 @@ two_three = ListNode(5, three_three)
 head_three = ListNode(2,two_three)
 
 
-lists = [head, head_two, head_three]
+lists = [[], [], three_three]
 answer = mergeKLists(lists)
 print('a')
