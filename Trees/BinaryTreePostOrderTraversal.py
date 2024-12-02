@@ -34,7 +34,7 @@ def postorderTraversal(root):
     # Collect all elements from second stack
     while stk2:
         curr = stk2.pop()
-        result.append(curr.data)
+        result.append(curr.val)
 
     return result
 
