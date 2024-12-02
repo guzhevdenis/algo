@@ -22,7 +22,7 @@ def inorderTraversal(root):
     #rec_trav(root, answer)
     stack = []
     stack.append(root)
-    visited = []
+
 
     while curr is not None or len(stack) > 0:
         
