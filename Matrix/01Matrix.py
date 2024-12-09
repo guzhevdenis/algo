@@ -23,6 +23,8 @@ def updateMatrix(mat):
         drow = [-1, 0, 1, 0]
         dcol = [0, -1, 0, 1]
         
+
+        #it can be changed to dx, dy in [(1,0), (-1,0), (0,1), (0,-1)]
         # Perform BFS
         while q:
             (row, col), steps = q.popleft()
