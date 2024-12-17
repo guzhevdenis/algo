@@ -1,7 +1,7 @@
 # Given an m x n binary matrix filled with 0's and 1's, 
 # find the largest square containing only 1's and return its area.
 from collections import deque
-from typing import List:
+from typing import List
 def maximalSquare(matrix: List[List[str]]) -> int:
         rows, cols = len(matrix), len(matrix[0]) # Get the dimensions of the matrix
         dp = [[0] * (cols + 1) for _ in range(rows + 1)] # Initialize DP table with extra row and column
