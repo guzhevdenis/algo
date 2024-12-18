@@ -12,7 +12,6 @@ def rotate(matrix: List[List[int]]) -> None:
     Do not return anything, modify matrix in-place instead.
     """
     edge_length = len(matrix)
-
     top = 0
     bottom = edge_length - 1
 
@@ -32,7 +31,6 @@ def rotate(matrix: List[List[int]]) -> None:
             temp = matrix[row][col]
             matrix[row][col] = matrix[col][row]
             matrix[col][row] = temp
-    
     return matrix
     
 
